@@ -1,4 +1,5 @@
 .env
+# myvenv is the folder name of the virtual environment
 myvenv
 __pycache__
 pdf
