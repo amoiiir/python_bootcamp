@@ -18,4 +18,8 @@
 
 ***
 
+## bypass policies
 
+```bash
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```

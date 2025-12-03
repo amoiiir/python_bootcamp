@@ -19,14 +19,14 @@
 # print(message3)
 
 # Exercise
-text = """Python is a powerful programming language. It's easy to learn and versatile! You  can  use  Python  for  web  development,  data  science,  andautomation. The syntax is clean and readable.This makes Python perfect for beginners and experts alike."""
+text = """Python is a powerful programming language. It's easy to learn and versatile! You can use Python for web development, data science,  andautomation. The syntax is clean and readable. This makes Python perfect for beginners and experts alike."""
 
 num_words = len(text.split())
 num_char = len(text.replace(" ", ""))
 num_sentences = len(text.split("."))
+sentence_count = text.count(".") + text.count("!") + text.count("?")
 
-
-print("Number of words: ", num_words)
-print("Number of characters", num_char)
-print("Number of sentences: ", num_sentences)
-
+print(f"Number of words: {num_words}")
+print(f"Number of characters: {num_char}")
+print(f"Number of sentences: {num_sentences}")
+print(f"Number of sentences using punctuation count: {sentence_count}")
