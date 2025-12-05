@@ -24,3 +24,11 @@ print_info(name="Alice", age=21, major="Physics", student_id="S12345") # Output:
 # major: Physics
 # student_id: S12345
 ```
+
+- Lambda functions are small anonymous functions defined with the `lambda` keyword. it is a non-reuseable function.
+
+```pythonsquare = lambda x: x * x
+print(square(5))  # Output: 25
+```
+
+
