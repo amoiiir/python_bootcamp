@@ -34,38 +34,38 @@
 # print(f"{person1.name} belongs to species {person1.species}.")  # Output: Alice belongs to species Homo sapiens
 
 
-# # Bank Account
-# class BankAccount:
+# Bank Account
+class BankAccount:
     
-#     #Define constructor
-#     def __init__(self, account_number, owner, balance = 0):
-#         self.account_number = account_number
-#         self.owner = owner
-#         self.balance = balance
-#         self.transaction_history = []
+    #Define constructor
+    def __init__(self, account_number, owner, balance = 0):
+        self.account_number = account_number
+        self.owner = owner
+        self.balance = balance
+        self.transaction_history = []
 
-#     # Instance of a class
-#     def deposit(self, amount):
-#         if amount > 0:
-#             self.balance += amount 
-#             self.transaction_history.append(f"Deposited ${amount}")
-#             return f"Deposited ${amount}. New balance: ${self.balance}"
-#         else:
-#             return "Invalid deposit amount"
+    # Instance of a class
+    def deposit(self, amount):
+        if amount > 0:
+            self.balance += amount 
+            self.transaction_history.append(f"Deposited ${amount}")
+            return f"Deposited ${amount}. New balance: ${self.balance}"
+        else:
+            return "Invalid deposit amount"
         
-#     def withdraw(self, amount):
-#         if amount > 0 and amount < self.balance:
-#             self.balance -= amount
-#             self.transaction_history.append(f"Withdrew ${amount}")
-#             return f"Withdrew ${amount}. New balance: ${self.balance}"
-#         else:
-#             return "Invalid withdrawal amount"
+    def withdraw(self, amount):
+        if amount > 0 and amount <= self.balance:
+            self.balance -= amount
+            self.transaction_history.append(f"Withdrew ${amount}")
+            return f"Withdrew ${amount}. New balance: ${self.balance}"
+        else:
+            return "Invalid withdrawal amount"
 
-#     def get_balance(self):
-#         return f"Owner name: {self.owner}. Current balance: ${self.balance}"
+    def get_balance(self):
+        return f"Owner name: {self.owner}. Current balance: ${self.balance}"
 
-#     def get_transaction_history(self):
-#         return f"Transaction History: {self.transaction_history}"
+    def get_transaction_history(self):
+        return f"Transaction History: {self.transaction_history}"
 
 # # Example usage:
 # account_num = input("Enter your account number: ")
@@ -77,38 +77,38 @@
 # print(acc1.get_balance())
 # print(acc1.deposit(500))
 
-# Exercose create a simple game chracter class with attributes like health, attack and heal methods
+# # Exercose create a simple game chracter class with attributes like health, attack and heal methods
 
-class GameCharacter:
+# class GameCharacter:
 
-    # create constructor
-    def __init__(self, name, health=100):
-        self.name = name
-        self.health = health
+#     # create constructor
+#     def __init__(self, name, health=100):
+#         self.name = name
+#         self.health = health
     
-    def char_info(self):
-        return print(f"Your character is {self.name}, current health is {self.health}")
+#     def char_info(self):
+#         return print(f"Your character is {self.name}, current health is {self.health}")
 
     
-    def attack(self, punch, kick):
-        if punch:
-            self.health -= 10
-        elif kick:
-            self.health -= 15
-        else:
-            self.health -= 20
-        return f"Your current health is {self.health}"
+#     def attack(self, punch, kick):
+#         if punch:
+#             self.health -= 10
+#         elif kick:
+#             self.health -= 15
+#         else:
+#             self.health -= 20
+#         return f"Your current health is {self.health}"
     
-    def heal(self, potion):
-        if potion:
-            self.health += 20
-        return f"Your new health is {self.health}"
+#     def heal(self, potion):
+#         if potion:
+#             self.health += 20
+#         return f"Your new health is {self.health}"
     
 
-char1 = GameCharacter("Boras", 130)
+# char1 = GameCharacter("Boras", 130)
 
-print(char1.char_info())
-print(char1.attack(punch=False, kick=False))
+# print(char1.char_info())
+# print(char1.attack(punch=False, kick=False))
     
 
 
